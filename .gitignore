@@ -1,2 +1,5 @@
 .DS_Store
 *.log
+
+# local redesign backups (kept under CW1/audit)
+*.bak_20261016_site
