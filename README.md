@@ -1,31 +1,7 @@
-# LUO Zhenyu — personal page
+# zhenyu2802148009-commits.github.io
 
-Minimal personal introduction page for CSI205TC Question 2 (GitHub Pages measurement target).
+CSI205TC Networking and Distributed Computing CW1 — Question 2 coursework site.
 
-**Live URL:** https://zhenyu2802148009-commits.github.io/
+Live: https://zhenyu2802148009-commits.github.io/
 
-## Design notes
-
-- Single page: About / Skills / Projects / Contact
-- Zero third-party requests (no CDN fonts, analytics, or external scripts)
-- Vanilla HTML / CSS / JS only
-- Dark theme default; light theme via toggle / `prefers-color-scheme`
-- Custom `404.html`; `.nojekyll` so Pages serves files verbatim
-
-## Local preview
-
-```bash
-python3 -m http.server 8123 --directory . --bind 127.0.0.1
-# open http://127.0.0.1:8123/
-```
-
-## Deploy
-
-From the parent `Q2_github_pages/` directory:
-
-```bash
-./scripts/deploy.sh
-./scripts/verify_pages.sh
-```
-
-Token hygiene: see `scripts/deploy.sh` header comments.
+Vanilla HTML + CSS. No CDN, analytics, or JS frameworks.

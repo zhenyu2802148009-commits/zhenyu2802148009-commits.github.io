@@ -3,126 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LUO Zhenyu — Year-3 Computer Science student at XJTLU. Minimal personal page used as the CSI205TC Q2 measurement target.">
-  <meta name="author" content="LUO Zhenyu">
-  <meta name="color-scheme" content="dark light">
-  <meta property="og:title" content="LUO Zhenyu">
-  <meta property="og:description" content="Computer Science student at XJTLU. Networking and distributed systems coursework.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://zhenyu2802148009-commits.github.io/">
-  <meta name="theme-color" content="#0f172a">
-  <title>LUO Zhenyu</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f172a'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='28' font-weight='bold' fill='%2338bdf8' text-anchor='middle'%3EZL%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="CSI205TC CW1 coursework site — Zhenyu Luo, XJTLU Taicang.">
+  <meta name="author" content="Zhenyu Luo">
+  <title>Zhenyu Luo · CSI205TC CW1</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <main class="wrap">
+    <header>
+      <h1>Zhenyu Luo · XJTLU Taicang · Data Science and Big Data Technology</h1>
+    </header>
 
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#top">LUO Zhenyu</a>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <button class="theme-btn" id="themeToggle" aria-label="Toggle colour theme" title="Toggle theme">
-            <span class="theme-icon" aria-hidden="true">☾</span>
-          </button>
-        </li>
+    <section aria-labelledby="this-site">
+      <h2 id="this-site">This site</h2>
+      <p>
+        This page is the CSI205TC Networking and Distributed Computing CW1
+        coursework site. The network measurement summaries below come from the
+        coursework evidence set.
+      </p>
+    </section>
+
+    <section aria-labelledby="measurements">
+      <h2 id="measurements">Measurements</h2>
+      <ul class="meas">
+        <li><strong>dig</strong> — resolve the Pages hostname to A records; answers in the GitHub Pages edge range 185.199.108–111.153.</li>
+        <li><strong>ping</strong> — 20 ICMP probes to the live site; mean RTT 81.7&nbsp;ms, 0% loss.</li>
+        <li><strong>traceroute</strong> — UDP path probe; silent after the early hops (ICMP later reached the edge).</li>
+        <li><strong>packet capture</strong> — cold page load shows DNS → TCP → TLS&nbsp;1.3 → HTTP/2 for the site objects.</li>
       </ul>
-    </nav>
-  </header>
-
-  <main id="main">
-    <span id="top"></span>
-
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <p class="eyebrow">Personal page · CSI205TC Q2</p>
-        <h1 id="hero-title">LUO Zhenyu</h1>
-        <p class="tagline">
-          Year-3 Computer Science undergraduate at
-          Xi'an Jiaotong-Liverpool University (XJTLU).
-          This term I am working through networking and distributed-systems coursework.
-        </p>
-      </div>
     </section>
 
-    <section id="about" class="section" aria-labelledby="about-title">
-      <div class="container narrow">
-        <h2 id="about-title">About</h2>
-        <p>
-          I am a Computer Science student at XJTLU in Suzhou.
-          Recent modules cover socket programming, packet analysis, and distributed
-          computation with tools such as Spark.
-        </p>
-        <p>
-          This site is a small, hand-written page with no third-party dependencies —
-          no CDN fonts, no analytics, no external scripts — so its delivery path
-          (DNS → TCP → TLS → HTTP/2) stays clean to capture for the CSI205TC coursework.
-        </p>
-        <p>
-          It is meant as a plain personal introduction and a stable measurement target,
-          not as a portfolio or job site.
-        </p>
-      </div>
-    </section>
-
-    <section id="skills" class="section section-alt" aria-labelledby="skills-title">
-      <div class="container narrow">
-        <h2 id="skills-title">Skills</h2>
-        <p class="skills-line">Python · sockets · Wireshark · Spark</p>
-      </div>
-    </section>
-
-    <section id="projects" class="section" aria-labelledby="projects-title">
-      <div class="container narrow">
-        <h2 id="projects-title">Projects</h2>
-        <article class="project">
-          <h3>This website</h3>
-          <p>
-            A zero-dependency responsive page on GitHub Pages (HTTPS / HTTP/2).
-            Used as the live endpoint for dig, ping, traceroute and Wireshark analysis
-            in CSI205TC Question 2.
-          </p>
-        </article>
-        <article class="project">
-          <h3>Video streaming over TCP and UDP</h3>
-          <p>
-            Coursework that streams video frames over TCP and UDP sockets, with
-            receiver-side reassembly and a Wireshark-based comparison of
-            reliability, latency and throughput.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="section section-alt" aria-labelledby="contact-title">
-      <div class="container narrow">
-        <h2 id="contact-title">Contact</h2>
-        <p class="contact-line">
-          <a href="https://github.com/zhenyu2802148009-commits" rel="noopener">github.com/zhenyu2802148009-commits</a>
-          <span class="sep" aria-hidden="true">·</span>
-          <a href="mailto:zhenyu.luo24@student.xjtlu.edu.cn">zhenyu.luo24@student.xjtlu.edu.cn</a>
-        </p>
-      </div>
+    <section aria-labelledby="source">
+      <h2 id="source">Source</h2>
+      <p>
+        <a href="https://github.com/zhenyu2802148009-commits/zhenyu2802148009-commits.github.io">github.com/zhenyu2802148009-commits/zhenyu2802148009-commits.github.io</a>
+      </p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year">2026</span> LUO Zhenyu · vanilla HTML / CSS / JS ·
-        <a href="https://pages.github.com/" rel="noopener">GitHub Pages</a></p>
-      <p class="footer-note">No cookies · no trackers · no third-party requests</p>
-    </div>
+  <footer class="wrap foot">
+    <p>zhenyu2802148009-commits · CSI205TC · 2026–2027</p>
   </footer>
-
-  <button id="backTop" class="back-top" aria-label="Back to top" title="Back to top">↑</button>
-  <script src="js/main.js" defer></script>
 </body>
 </html>
